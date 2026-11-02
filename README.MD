@@ -8,7 +8,7 @@ Existing project directory names and student project contents are preserved. The
 
 Carter's project was uploaded at the repository root in commit `501778e`. Its HTML, CSS, drawing, audio, and images are preserved in `2028/CarterHalloween/`. The root landing page is the shared class directory again.
 
-`MyHalloween` is preserved in `2027/` alongside `Eli_Halloween`, as confirmed by the repository owner. The folders contain identical project files.
+`MyHalloween` is preserved in `2027/` alongside `Eli_Halloween`, as confirmed by the requester. The folders contain identical project files.
 
 The old root `index.htm` and `drawing.htm` redirect to Ahmad's complete project in `2028/ahmadhalloween/`. Other old direct project URLs change because their folders have moved. Unrelated archived/reference files remain at the root.
 
