@@ -1,0 +1,64 @@
+/* Styling for H1 */
+
+/* Merged body styles */
+body {
+  color: red;
+  background-image: url("garden.jpg");
+  background-size: cover;
+  background-color: orange;
+  margin: 0;
+  padding: 20px;
+}
+div.home {
+    margin-left: 100px;
+    margin-right: 100px;
+    font-size: 24pt;
+    background-color: white;
+    opacity: 0.5; /* 50% transparent */
+    padding: 50px;
+}
+
+h1 {
+  color: red;
+  font-size: 32px; /* Fixed: changed 'font: size 32%' to 'font-size: 32px' */
+  text-align: center;
+}
+p.center {
+    text-align: center;
+}
+.button {
+  background-color: #000000;
+  border: none;
+  color: white;
+  padding: 15px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 32px;
+  margin: -150px 650px;
+  cursor: pointer;
+}
+/* Flashlight mask layer (hidden by default) */
+.flashlight-overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 150vw;
+  height: 150vh;
+  pointer-events: none;
+  z-index: 9999;
+  opacity: 0; /* Starts hidden */
+  transition: opacity 0.5s ease-in-out; /* Smooth fade in */
+
+  background: radial-gradient(
+    circle 150px at var(--x, 50vw) var(--y, 50vh),
+    rgba(0,0,0,0) 0%,
+    rgba(0,0,0,0.8) 80%,
+    rgba(0,0,0,0.95) 100%
+  );
+}
+
+/* Activated by JavaScript when scrolled down */
+.flashlight-overlay.active {
+  opacity: 1;
+}

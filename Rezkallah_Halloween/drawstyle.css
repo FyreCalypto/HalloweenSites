@@ -1,0 +1,16 @@
+.stem{
+    background-color: brown;
+    width: 30px;
+    height: 50px;
+    position: absolute;
+    top: 100px;
+    left: 200px;
+
+}
+.orangebody{
+    background-color: orange;
+    width: 150px;
+    height: 170px;
+    margin-top: 90px;
+    margin-left: 130px;
+}
