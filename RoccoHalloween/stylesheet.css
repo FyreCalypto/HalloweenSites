@@ -1,0 +1,237 @@
+html{
+    background-color: rgb(221, 178, 138);
+    background-image: url('images/snowyForestBackground.jpg');
+    background-size:  cover;
+    background-repeat: no-repeat;
+}
+
+.bannerImage{
+    display: block;
+    margin: 0 auto;
+    border: 3px solid #faf4f4;
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.4);
+}
+img{
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.4);
+}
+.storyBox{
+    width: 1500px;
+    padding: 20px;
+    border: 2px solid rgb(255, 255, 255);
+    border-radius: 10px; 
+    margin: 0 auto
+}
+.bigText{
+    color:rgb(253, 252, 252);
+    font-size: 50px;
+    text-shadow: 0 10px 20px #020202;
+}
+.krampusText{
+    color: rgb(255, 0, 0);
+    font-size: 30px;
+    font-weight: bold;
+    letter-spacing: 6px;
+    text-shadow:
+        0 0 5px rgb(255, 0, 0),
+        0 0 15px rgb(255, 0, 0),
+        0 0 30px rgb(180, 0, 0),
+        0 0 60px rgb(120, 0, 0);
+    animation: evilPulse 3s ease-in-out infinite;
+}
+.ontoText{
+    color:rgb(255, 255, 255);
+    font-size: 20pt;
+    text-shadow: 0 10px 20px rgb(0, 0, 0);
+    font-style: italic;
+}
+.snow {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    pointer-events: none;
+    overflow: hidden;
+    z-index: 9999;
+}
+.snowflake {
+    position: absolute;
+    top: -10px;
+    left: var(--left);
+    width: var(--size);
+    height: var(--size);
+    background-color: white;
+    border-radius: 50%;
+    opacity: 0.8;
+    animation: fall var(--duration) linear var(--delay) infinite;
+}
+@keyframes fall {
+    0% {
+        transform: translate(0, 0);
+    }
+    50% {
+        transform: translate(var(--drift), 50vh);
+    }
+    100% {
+        transform: translate(0, 105vh);
+    }
+}
+@media (prefers-reduced-motion: reduce) {
+    .snow {
+        display: none;
+    }
+}
+.gallery {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 20px;
+    margin-top: 20px;
+}
+.card {
+    margin: 0;
+    padding: 10px;
+    background-color: rgba(0, 0, 0, 0.5);
+    border: 2px solid rgb(255, 255, 255);
+    border-radius: 10px;
+    text-align: center;
+    transition: transform 0.3s ease;
+    position: relative;
+    min-width: 0;
+    overflow: hidden;
+}
+.card:hover {
+    transform: translateY(-6px) scale(1.03);
+    z-index: 2;
+}
+.card img {
+    display: block;
+    width: 100%;
+    max-width: 100%;
+    height: auto;
+    border-radius: 6px;
+}
+.card figcaption {
+    color: rgb(253, 252, 252);
+    font-size: 16px;
+    font-style: italic;
+    margin-top: 10px;
+    text-shadow: 0 10px 20px #020202;
+}
+h1{
+    color:rgb(255, 255, 255);
+    font-size: 32pt;
+    text-align: center;
+    text-shadow: 0 10px 20px rgb(0, 0, 0);
+}
+h2{
+    color:rgb(255, 255, 255);
+    font-size: 25pt;
+    text-shadow: 0 10px 20px rgb(0, 0, 0);
+    font-style: bold;
+}
+p {
+    color:rgb(253, 252, 252);
+    font-size: 20px;
+    text-shadow: 0 10px 20px #020202;
+    line-height: 30px;
+}
+.linkContainers {
+    color:rgb(253, 252, 252);
+    font-size: 29px;
+    text-shadow: 0 10px 20px #020202;
+    text-align: center;
+    line-height: 30px;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 15px;
+}
+a:active{
+    color:rgb(253, 252, 252);
+    font-size: 29px;
+    text-shadow: 0 10px 20px #020202;
+    text-align: center;
+    line-height: 30px;
+}
+a:visited{
+    color:rgb(253, 252, 252);
+    font-size: 29px;
+    text-shadow: 0 10px 20px #020202;
+    text-align: center;
+    line-height: 30px;
+}
+
+/* Top navigation links styled as buttons */
+.linkContainers a,
+.linkContainers a:visited {
+    padding: 12px 28px;
+    font-size: 20px;
+    color: rgb(253, 252, 252);
+    background-color: rgba(0, 0, 0, 0.5);
+    border: 2px solid rgb(255, 255, 255);
+    border-radius: 10px;
+    text-decoration: none;
+    text-shadow: none;
+    transition: transform 0.3s ease, background-color 0.3s ease;
+}
+.linkContainers a:hover {
+    background-color: rgb(180, 0, 0);
+    transform: translateY(-4px);
+}
+.linkContainers a:focus-visible {
+    outline: 3px solid rgb(255, 0, 0);
+    outline-offset: 3px;
+}
+
+@keyframes evilPulse {
+    0%, 100% {
+        opacity: 1;
+        text-shadow:
+            0 0 5px rgb(255, 0, 0),
+            0 0 15px rgb(255, 0, 0),
+            0 0 30px rgb(180, 0, 0),
+            0 0 60px rgb(120, 0, 0);
+    }
+    50% {
+        opacity: 0.85;
+        text-shadow:
+            0 0 10px rgb(255, 0, 0),
+            0 0 30px rgb(255, 0, 0),
+            0 0 60px rgb(200, 0, 0),
+            0 0 100px rgb(140, 0, 0);
+    }
+    55% { opacity: 0.4; }
+    60% { opacity: 1; }
+}
+
+@media (prefers-reduced-motion: reduce) {
+    .krampusText {
+        animation: none;
+    }
+}
+
+/* Floating back-to-top button */
+.backToTop,
+.backToTop:visited {
+    position: fixed;
+    bottom: 25px;
+    right: 25px;
+    z-index: 10000;
+    padding: 12px 20px;
+    font-size: 20px;
+    color: rgb(253, 252, 252);
+    background-color: rgba(0, 0, 0, 0.5);
+    border: 2px solid rgb(255, 255, 255);
+    border-radius: 10px;
+    text-decoration: none;
+    text-shadow: none;
+    transition: transform 0.3s ease, background-color 0.3s ease;
+}
+.backToTop:hover {
+    background-color: rgb(180, 0, 0);
+    transform: translateY(-4px);
+}
+.backToTop:focus-visible {
+    outline: 3px solid rgb(255, 0, 0);
+    outline-offset: 3px;
+}
