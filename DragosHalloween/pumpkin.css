@@ -1,0 +1,157 @@
+body {
+    box-sizing: border-box;
+    margin: 32px;
+    min-height: calc(100vh - 64px);
+    padding: 30px;
+    background-color: rgba(3, 3, 3, 0.5);
+    text-align: center;
+}
+
+html {
+    background-color: cornflowerblue;
+    background-image: url("images/pumpkinpatch.jpg");
+    background-position: center;
+    background-size: cover;
+    background-attachment: fixed;
+}
+
+main {
+    display: block;
+}
+
+h1 {
+    margin: 10px 0 30px 0;
+    color: crimson;
+    font-family: fantasy;
+    font-size: 52px;
+    text-shadow: 2px 2px 5px black;
+    text-align: center;
+}
+
+.pumpkin {
+    position: relative;
+    width: 320px;
+    height: 300px;
+    max-width: 100%;
+    margin: 20px auto;
+}
+
+.body {
+    position: absolute;
+    top: 65px;
+    left: 25px;
+    width: 260px;
+    height: 200px;
+    max-width: calc(100% - 50px);
+    background-color: #f58220;
+    border-radius: 45% 50% 42% 48%;
+}
+
+.stem {
+    position: absolute;
+    top: 25px;
+    left: 135px;
+    width: 32px;
+    height: 65px;
+    background-color: #49752c;
+    border-radius: 8px 3px 2px 4px;
+    transform: rotate(-12deg);
+}
+
+.leaf {
+    position: absolute;
+    top: 40px;
+    left: 160px;
+    width: 35px;
+    height: 20px;
+    background-color: #5d8735;
+    border-radius: 5px 90% 5px 90%;
+    transform: rotate(-20deg);
+}
+
+.eye1,
+.eye2 {
+    position: absolute;
+    background-color: #302020;
+}
+
+.eye1 {
+    top: 115px;
+    left: 75px;
+    width: 48px;
+    height: 52px;
+    clip-path: polygon(45% 0%, 100% 100%, 0% 85%);
+}
+
+.eye2 {
+    top: 120px;
+    left: 185px;
+    width: 45px;
+    height: 48px;
+    clip-path: polygon(35% 0%, 100% 85%, 0% 100%);
+}
+
+.nose {
+    position: absolute;
+    top: 165px;
+    left: 140px;
+    width: 35px;
+    height: 32px;
+    background-color: #302020;
+    clip-path: polygon(50% 0%, 100% 100%, 0% 85%);
+}
+
+.mouth {
+    position: absolute;
+    top: 195px;
+    left: 80px;
+    width: 145px;
+    height: 43px;
+    background-color: #302020;
+    clip-path: polygon(
+        0% 0%, 18% 25%, 30% 0%,
+        45% 30%, 58% 5%, 72% 25%,
+        100% 0%, 90% 75%, 72% 100%,
+        55% 75%, 38% 100%, 20% 70%
+    );
+}
+
+button {
+    margin: 20px 0;
+    padding: 10px 18px;
+    border: 2px solid darkred;
+    border-radius: 8px;
+    background-color: crimson;
+    color: white;
+    cursor: pointer;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-size: 16px;
+    transition: background-color 0.2s, transform 0.2s;
+}
+
+button:hover {
+    background-color: darkred;
+    transform: scale(1.05);
+}
+
+button:focus-visible {
+    outline: 3px solid white;
+    outline-offset: 3px;
+}
+
+@media (max-width: 420px) {
+    body {
+        margin: 14px;
+        min-height: calc(100vh - 28px);
+        padding: 18px;
+    }
+
+    h1 {
+        font-size: 40px;
+    }
+
+    .pumpkin {
+        transform: scale(0.85);
+        margin: -5px auto;
+    }
+}

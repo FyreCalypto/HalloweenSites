@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+
+<head>
+<title>The Shadow of Vlad</title>
+</head>
+
+<body>
+
+<h1>The Shadow of Vlad</h1>
+<p>Long ago, in the misty mountains of Romania, there lived a ruler named Vlad III, better known as Vlad the Impaler. He was a real historical figure, but over time, many spooky legends grew around his name. This story is a fictional Halloween tale inspired by those legends.</p>
+
+<p>One cold October evening, a young boy named Andrei was walking home from school when a thick fog rolled across the road. Andrei lived near an old castle that stood on a rocky hill. Everyone in the village said the castle had been abandoned for hundreds of years. But that night, Andrei saw something strange. A single candle flickered in one of the castle windows.</p>
+
+<p>“Who would be there?” Andrei wondered. Suddenly, he heard a voice behind him. “Do not go to the castle after dark.” Andrei turned around and saw an old woman standing beside the road with a basket of apples. “Why not?” he asked. She looked toward the castle and whispered, “Because some shadows never leave.” Before Andrei could ask another question, the fog surrounded the woman, and she disappeared.</p>
+
+<p>That night, a storm shook the windows of Andrei's house. As he lay in bed, he heard three quiet knocks. Knock. Knock. Knock. Andrei sat up and listened carefully. Then he heard a whisper from outside. “Andrei...” His heart began to race.</p>
+
+<p>He slowly walked to the window. On the hill, beneath the pale moonlight, stood a tall figure wearing a dark cloak. Andrei couldn't see the figure's face, but he recognized the castle behind him. Suddenly, the figure raised one hand. The candle in the castle window went out, and the mysterious figure disappeared.</p>
+
+<p>The next morning, Andrei told his grandfather what he had seen. His grandfather became very quiet. “My boy,” he said, “that castle once belonged to Vlad Tepes.” Andrei's eyes widened. “Vlad the Impaler?” His grandfather nodded. “People say Vlad was a fierce ruler. But stories can become stranger as they are passed from one generation to another. Some villagers believe that on certain nights, his shadow returns to the castle.”</p>
+
+<p>Andrei swallowed nervously. “Do you believe that?” His grandfather smiled. “I believe old castles make excellent homes for bats.” Andrei laughed, but he still couldn't stop thinking about the mysterious figure.</p>
+
+<p>That evening, Andrei looked toward the castle again. It was completely dark. There were no candles and no mysterious figures. Just an empty castle sitting beneath the moon.</p>
+
+<p>
+
+
+
+</body>
+</html>

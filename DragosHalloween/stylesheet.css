@@ -1,0 +1,264 @@
+h1{
+    color: crimson;
+    font-size: 52px;
+    font-family: fantasy;
+    margin: 10px 0 30px 0;
+    text-shadow: 2px 2px 5px black;
+    text-align: center;
+}
+
+h2,
+h3,
+h4{
+    color: crimson;
+    font-family: fantasy;
+    margin: 15px 0;
+    text-align: left;
+    text-shadow: 2px 2px 5px black;
+}
+
+h2{
+    font-size: 42px;
+}
+
+h3{
+    font-size: 36px;
+}
+
+h4{
+    font-size: 30px;
+}
+
+p{
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    color: lightgrey;
+    text-align: left;
+    font-size: 20px;
+    line-height: 1.7;
+    max-width: 900px;
+    margin: 0 0 28px 0;
+    text-shadow: 1px 1px 3px black;
+}
+
+p i{
+    color: #f0d0d0;
+}
+
+.ending{
+    text-align: left;
+    font-size: 21px;
+    margin-top: 35px;
+}
+
+html{
+    background-color: cornflowerblue;
+    background-image: url("images/Castle.jpg");
+    background-position: center;
+    background-size: cover;
+    background-attachment: fixed;
+}
+
+body{
+    background-color: rgba(3, 3, 3, 0.5);
+    box-sizing: border-box;
+    margin: 32px;
+    min-height: calc(100vh - 64px);
+    padding: 30px;
+    text-align: center;
+}
+
+img{
+    display: block;
+    border: 3px solid crimson;
+    border-radius: 5px;
+    box-shadow: 0 0 20px black;
+}
+
+.Fact{
+    width: 300px;
+    height: 400px;
+    object-fit: cover;
+    margin: 0 auto 30px auto;
+}
+
+.bottom-images{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    gap: 30px;
+    width: 100%;
+    margin-top: 20px;
+}
+
+.bottom-images img{
+    object-fit: contain;
+    margin: 0;
+    max-width: 100%;
+}
+
+.roma{
+    width: auto;
+    height: 300px;
+}
+
+.nia{
+    width: auto;
+    height: 200px;
+}
+
+button{
+    background-color: crimson;
+    border: 2px solid darkred;
+    border-radius: 8px;
+    color: white;
+    cursor: pointer;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-size: 16px;
+    margin: 20px 0;
+    padding: 10px 18px;
+    transition: background-color 0.2s, transform 0.2s;
+}
+
+button:hover{
+    background-color: darkred;
+    transform: scale(1.05);
+}
+
+button:focus-visible{
+    outline: 3px solid white;
+    outline-offset: 3px;
+}
+
+@media (max-width: 900px){
+
+    .bottom-images{
+        gap: 15px;
+    }
+
+    .roma{
+        height: 260px;
+    }
+
+    .nia{
+        height: 180px;
+    }
+}
+
+@media (max-width: 600px){
+
+    body{
+        margin: 14px;
+        min-height: calc(100vh - 28px);
+        padding: 18px;
+    }
+
+    h1{
+        font-size: 40px;
+    }
+
+    p{
+        font-size: 18px;
+        line-height: 1.6;
+    }
+
+    .Fact{
+        width: 250px;
+        height: 330px;
+    }
+
+    h2{
+        font-size: 36px;
+    }
+
+    h3{
+        font-size: 31px;
+    }
+
+    h4{
+        font-size: 27px;
+    }
+
+    .bottom-images{
+        flex-direction: row;
+        gap: 8px;
+    }
+
+    .roma{
+        height: 200px;
+    }
+
+    .nia{
+        height: 150px;
+    }
+}
+
+#jumpscare{
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    object-fit: cover;
+    background: black;
+    border: none;
+    border-radius: 0;
+    box-shadow: none;
+    z-index: 9999;
+}
+
+#jumpscare.show{
+    display: block;
+}
+
+/* Personal castle photographs fill the open space alongside the story. */
+.story-layout {
+    display: grid;
+    grid-template-columns: minmax(0, 1fr) minmax(240px, 300px);
+    align-items: start;
+    gap: 36px;
+    max-width: 1300px;
+    margin: 0 auto;
+    text-align: left;
+}
+.story-text { min-width: 0; }
+.castle-gallery {
+    display: grid;
+    gap: 30px;
+    min-width: 0;
+}
+.castle-photo {
+    overflow: hidden;
+    margin: 0;
+    border: 2px solid crimson;
+    border-radius: 5px;
+    background: rgba(8, 5, 7, 0.9);
+    box-shadow: 0 0 20px black;
+}
+.castle-photo img {
+    box-sizing: border-box;
+    display: block;
+    width: 100%;
+    height: auto;
+    margin: 0;
+    border: 0;
+    border-radius: 0;
+    box-shadow: none;
+}
+@media (max-width: 950px) {
+    .story-layout { grid-template-columns: minmax(0, 1fr) 240px; gap: 24px; }
+}
+@media (max-width: 760px) {
+    .story-layout { grid-template-columns: minmax(0, 1fr); }
+    .castle-gallery { grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 16px; margin-bottom: 24px; }
+    .castle-gallery img { aspect-ratio: 3 / 4; object-fit: cover; }
+    .bottom-images { flex-wrap: wrap; }
+}
+@media (max-width: 420px) {
+    .castle-gallery { grid-template-columns: minmax(0, 1fr); }
+}
+
+@media (min-width: 761px) {
+    .castle-gallery img { max-height: 340px; object-fit: cover; }
+}
